@@ -7,6 +7,7 @@
 
 # 步骤
 1. 使用自己的账号替换代码中的alitechgroup
+2. 使用自己钱包的名称替换mainnet，使用自己钱包的密码替换PW5J7Vh3CNGMaAjXMj4cDuzb9ai945QwceekiYTaTvr6XB3EpV9b3
 2. python mining.py
 
 # 说明
