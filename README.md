@@ -1,10 +1,39 @@
 # bt-miner
-The miner of BT
-在同一个价位反复买卖达到挖矿目的
+在同一个价位反复买卖达到挖矿目的。可以在此程序上扩展达到程序化交易的目的
 
 # 依赖
-1. eos命令行
-2. python
+1. 使用eos官方钱包并导入私钥[https://developers.eos.io/eosio-home/docs/setting-up-your-environment](https://developers.eos.io/eosio-home/docs/setting-up-your-environment)
+2. python2.7
 
 # 步骤
-1. 
+1. 使用自己的账号替换代码中的alitechgroup
+2. python mining.py
+
+# 说明
+* BTEX的挂单全部都是转账，在MEMO中备注挂单信息
+  * 买单备注
+  ```javascript
+  order:1-表示买单,订单号,交易对ID,价格,价格小数位数
+  ```
+  * 卖单
+  ```javascript
+  order:2-表示卖单,订单号,交易区0-EOS/1-USDT,价格,价格小数位数
+  ```
+* 查看合约的交易对ID
+  存储在合约的tokenpairs表里面,id=154114185766125772是BT/EOS交易对的
+  ```javascript
+      {
+      "id": "154114185766125772",
+      "base_id": 0,
+      "contract": "eosbtextoken",
+      "sym": 21570,
+      "sym_name": "BT",
+      "precision": 4,
+      "creator": "eosbtexfunds",
+      "create_time": "1541141872000",
+      "pledge": "5000.0000 BT",
+      "price": "0.00511200000000000",
+      "open_price": "0.00511100000000000",
+      "open_date": "1546822127500"
+    }
+  ```
