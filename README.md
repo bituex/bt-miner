@@ -21,7 +21,7 @@
   order:2-表示卖单,订单号,交易区0-EOS/1-USDT,价格,价格小数位数
   ```
 * 查看合约的交易对ID
-  存储在合约的tokenpairs表里面,id=154114185766125772是BT/EOS交易对的
+  存储在btexexchange合约的tokenpairs表里面,id=154114185766125772是BT/EOS交易对的,自己上的币需要在表中查询。其中base_id:0是eos交易区，base_id:1是usdt交易区
   ```javascript
     {
     "id": "154114185766125772",
